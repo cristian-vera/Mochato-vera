@@ -1,0 +1,56 @@
+.main__productos {
+    background-color: #fdfd96;
+    padding-left: 1em;
+    padding-right: 1em;
+    padding-top: 0.7em;
+    h1 {
+        font-family:"roboto";
+        font-size: 1.87rem;
+        font-weight:bold;
+        text-transform: uppercase;
+        letter-spacing:2px;
+    }
+    p {
+        font-family:"roboto";
+        font-size: 1.12rem;
+        font-weight:normal;
+        text-transform:none;
+        letter-spacing:2px;
+    }
+}
+
+.main__productosContenido {
+    background-color: #fdfd96;
+    line-height: 1.6rem;
+    padding-left: 1em;
+    padding-right: 1em;
+    padding-top: 1em;
+    h2 {
+        color: #005738;
+        font-family:"roboto",sans-serif;
+        font-size: 1.688rem;
+        line-height: 2.25rem;
+    }
+    img {
+        width: 300px;
+        height: 200px;
+    }
+    h3 {
+        color: #000000;
+        font-family:"roboto", sans-serif;
+        font-size: 1.12rem;
+    }
+    p {
+        color: #000000;
+        font-family:"roboto", sans-serif;
+        font-size: 0.87rem;
+        width: 280px;
+    }
+}
+
+.main__productosBebidas, .main__productosReposteria {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content:start;
+}

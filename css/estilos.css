@@ -1,0 +1,973 @@
+* {
+  margin: 0px;
+  padding: 0px;
+  box-sizing: border-box; }
+
+.hidden {
+  clip: rect(0 0 0 0);
+  clip-path: inset(50%);
+  height: 1px;
+  width: 1px;
+  overflow: hidden;
+  position: absolute; }
+
+.enlaceVerMas {
+  font-family: "crete round",sans-serif;
+  font-size: 1.06rem;
+  font-weight: bolder;
+  text-transform: uppercase;
+  text-decoration: none;
+  line-height: 3em; }
+
+.header {
+  background-color: #f4f4f4;
+  position: sticky;
+  top: 0;
+  left: 0;
+  right: 0;
+  display: flex;
+  flex-direction: column;
+  flex-wrap: nowrap;
+  z-index: 1;
+  padding-left: 1em;
+  padding-right: 1em; }
+
+.header__contenido {
+  display: inline-flex;
+  justify-content: space-between; }
+
+.header__buscador {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-evenly;
+  align-items: flex-end; }
+  .header__buscador input {
+    height: 2em;
+    width: 19em; }
+  .header__buscador button {
+    height: 2em; }
+
+.header__nav {
+  display: flex;
+  flex-direction: row;
+  justify-content: flex-end; }
+
+.header__navMenu {
+  font-family: "roboto", serif;
+  font-weight: bold;
+  font-size: 1.25rem;
+  list-style: none;
+  text-align: right;
+  word-spacing: 20px;
+  letter-spacing: 5px; }
+  .header__navMenu li {
+    display: inline-block;
+    position: relative; }
+    .header__navMenu li a {
+      text-decoration: none;
+      text-transform: uppercase;
+      border-radius: 0.2em;
+      transition: background-color 200ms ease-in-out;
+      color: #804000; }
+      .header__navMenu li a:hover {
+        color: #f4f4f4;
+        background-color: #000000; }
+
+.header__navMenu li:hover ul {
+  display: block; }
+
+.header__navSubmenu {
+  position: absolute;
+  display: none; }
+  .header__navSubmenu li {
+    display: block;
+    background-color: #f9eac3;
+    text-align: left;
+    padding: 0.36em;
+    border-radius: 0.2em; }
+    .header__navSubmenu li a {
+      color: #804000;
+      text-transform: capitalize;
+      transition: color 200ms ease-in-out; }
+
+.footer {
+  font-family: "roboto",sans-serif;
+  background-color: #000000;
+  color: #f4f4f4;
+  line-height: 1.5rem;
+  padding-top: 2em;
+  padding-left: 1em;
+  padding-right: 1em; }
+
+.footer__contenido {
+  display: flex;
+  flex-flow: row;
+  justify-content: space-between; }
+
+.footer__subcontenido {
+  display: flex;
+  flex-direction: row; }
+
+.footer__horarios {
+  padding-left: 3.5em; }
+  .footer__horarios span {
+    font-size: 0.93rem;
+    line-height: 2.7em; }
+  .footer__horarios li {
+    font-size: 0.98rem;
+    list-style: none; }
+
+.footer__menuSecundario {
+  list-style: none;
+  padding-bottom: 2em; }
+  .footer__menuSecundario li a {
+    text-decoration: none;
+    color: #f4f4f4;
+    line-height: 2em; }
+
+.footer__redesSociales li {
+  list-style: none;
+  display: inline; }
+  .footer__redesSociales li img {
+    width: 35px; }
+
+.footer__newsletter {
+  display: flex;
+  flex-flow: column;
+  justify-content: space-around;
+  align-self: stretch; }
+  .footer__newsletter p {
+    font-size: 1rem;
+    width: 80%;
+    text-align: left; }
+  .footer__newsletter form {
+    display: flex;
+    flex-flow: column; }
+    .footer__newsletter form input {
+      width: 220px;
+      height: 2em; }
+    .footer__newsletter form button {
+      width: 5em;
+      height: 2em;
+      text-transform: uppercase; }
+
+.footer__copyright {
+  font-size: 0.73rem; }
+
+.hero {
+  background-color: #fdfd96; }
+  .hero h1 {
+    font-family: "crete round", serif;
+    font-weight: bold;
+    font-size: 3.12rem;
+    list-style: none;
+    text-align: center;
+    text-transform: uppercase;
+    word-spacing: 15px;
+    letter-spacing: 10px; }
+
+.producto1 {
+  background-color: #f9eac3; }
+
+.producto2 {
+  background-color: #fdfd96; }
+
+.producto1, .producto2 {
+  height: 300px;
+  padding-left: 1em;
+  padding-right: 1em; }
+  .producto1 img, .producto2 img {
+    width: 450px;
+    height: 300px;
+    max-width: 450px;
+    max-height: 300px;
+    padding-top: 1em;
+    padding-bottom: 1em; }
+  .producto1 h3, .producto2 h3 {
+    font-family: "roboto",sans-serif;
+    font-size: 1.87rem;
+    text-transform: capitalize;
+    letter-spacing: 2px;
+    color: #005738;
+    width: 50%;
+    max-width: auto;
+    line-height: 3em; }
+  .producto1 p, .producto2 p {
+    font-family: "roboto",sans-serif;
+    font-weight: bold;
+    font-size: 1.12rem;
+    letter-spacing: 2px;
+    color: #000000;
+    line-height: 1.6rem;
+    width: 100%;
+    max-width: auto; }
+
+.producto1__contenido {
+  display: flex;
+  flex-direction: row; }
+
+.producto2__contenido {
+  display: flex;
+  flex-direction: row-reverse; }
+
+.producto1__text {
+  padding-left: 50px; }
+
+.producto2__text {
+  padding-right: 50px; }
+
+.main__productos {
+  background-color: #fdfd96;
+  padding-left: 1em;
+  padding-right: 1em;
+  padding-top: 0.7em; }
+  .main__productos h1 {
+    font-family: "roboto";
+    font-size: 1.87rem;
+    font-weight: bold;
+    text-transform: uppercase;
+    letter-spacing: 2px; }
+  .main__productos p {
+    font-family: "roboto";
+    font-size: 1.12rem;
+    font-weight: normal;
+    text-transform: none;
+    letter-spacing: 2px; }
+
+.main__productosContenido {
+  background-color: #fdfd96;
+  line-height: 1.6rem;
+  padding-left: 1em;
+  padding-right: 1em;
+  padding-top: 1em; }
+  .main__productosContenido h2 {
+    color: #005738;
+    font-family: "roboto",sans-serif;
+    font-size: 1.688rem;
+    line-height: 2.25rem; }
+  .main__productosContenido img {
+    width: 300px;
+    height: 200px; }
+  .main__productosContenido h3 {
+    color: #000000;
+    font-family: "roboto", sans-serif;
+    font-size: 1.12rem; }
+  .main__productosContenido p {
+    color: #000000;
+    font-family: "roboto", sans-serif;
+    font-size: 0.87rem;
+    width: 280px; }
+
+.main__productosBebidas, .main__productosReposteria {
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+  justify-content: start; }
+
+.main__galeria {
+  background: linear-gradient(-50deg, #f5ce6d, #fdfd96);
+  padding-left: 1em;
+  padding-right: 1em;
+  padding-top: 0.4em; }
+  .main__galeria h1 {
+    font-family: "roboto";
+    font-size: 1.87rem;
+    font-weight: bold;
+    text-transform: uppercase;
+    letter-spacing: 2px;
+    line-height: 3rem; }
+
+.fotos__galeria {
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+  justify-content: space-between; }
+  .fotos__galeria img {
+    width: 375px;
+    height: 375px; }
+
+.main__nosotros {
+  background: linear-gradient(-50deg, #f5ce6d, #fdfd96);
+  height: 350px;
+  padding-left: 1em;
+  padding-right: 1em; }
+  .main__nosotros h1 {
+    font-family: "roboto";
+    font-size: 1.87rem;
+    font-weight: bold;
+    text-transform: uppercase;
+    letter-spacing: 2px;
+    padding-top: 0.4em; }
+  .main__nosotros p {
+    color: #000000;
+    font-family: "roboto", sans-serif;
+    font-size: 1rem;
+    text-align: justify;
+    line-height: 1.9rem; }
+
+.main__nosotrosContenido {
+  display: inline-grid;
+  grid-template-columns: 1.7fr 1.3fr;
+  grid-template-areas: "main__nosotrosText main__nosotrosFoto"; }
+  .main__nosotrosContenido img {
+    width: 14em;
+    height: 14em; }
+
+.main__nosotrosFoto {
+  grid-area: main__nosotrosFoto;
+  justify-self: center;
+  align-self: center;
+  transform: rotate(-10deg);
+  z-index: 0; }
+
+.main__contacto {
+  background: linear-gradient(-50deg, #f5ce6d, #fdfd96);
+  padding-left: 1em;
+  padding-right: 1em;
+  line-height: 2rem; }
+
+.main__contactoSub {
+  display: grid;
+  grid-template-columns: 1.5fr 1.5fr;
+  grid-template-areas: "main__contactoInfo main__contactoMapa"; }
+  .main__contactoSub h1 {
+    font-family: "roboto";
+    font-size: 1.87rem;
+    font-weight: bold;
+    text-transform: uppercase;
+    letter-spacing: 2px;
+    line-height: 3rem; }
+  .main__contactoSub h2 {
+    color: #003b27;
+    font-family: "roboto",sans-serif;
+    font-size: 1.68rem;
+    line-height: 3rem; }
+
+.main__contactoInfo {
+  grid-area: main__contactoInfo; }
+  .main__contactoInfo ul {
+    color: #003b27;
+    font-family: "roboto",sans-serif;
+    font-size: 1.5rem; }
+    .main__contactoInfo ul li {
+      list-style: none; }
+
+.main__contactoMapa {
+  grid-area: main__contactoMapa; }
+  .main__contactoMapa iframe {
+    width: 400px; }
+
+.main__contactoFormulario {
+  font-family: "roboto", sans-serif;
+  font-size: 1rem;
+  width: 75%;
+  background-color: #f4f4f4; }
+  .main__contactoFormulario button {
+    width: 4em;
+    height: 2.3em; }
+
+@media only screen and (min-width: 1024px) and (max-width: 1155px) {
+  .producto1 h3, .producto2 h3 {
+    line-height: 2em; }
+  .footer__horarios span, .footer__horarios li {
+    font-size: 1rem;
+    padding-bottom: 2em;
+    width: 200px; }
+  .footer__menuSecundario {
+    font-size: 1.2em;
+    list-style: none;
+    padding-bottom: 1em;
+    padding-left: 8em;
+    padding-right: 3em; }
+  .footer__redesSociales {
+    list-style: none;
+    display: inline;
+    padding-left: 9em; }
+    .footer__redesSociales img {
+      width: 35px; }
+  .footer__newsletter {
+    padding-left: 7em; }
+    .footer__newsletter p {
+      font-size: 1.3rem; }
+  .main__nosotros p {
+    font-size: 1.1rem;
+    text-align: justify;
+    line-height: 1.3rem; } }
+
+@media only screen and (min-width: 1019px) and (max-width: 1023px) {
+  .header__navMenu li {
+    font-size: 3vh; }
+  .footer__horarios {
+    padding-left: 2em;
+    padding-right: 1.5em;
+    padding-bottom: 2em; }
+    .footer__horarios span, .footer__horarios li {
+      font-size: 0.91rem; }
+  .footer__menuSecundario {
+    list-style: none;
+    padding-bottom: 1.5em;
+    padding-left: 3em;
+    padding-right: 4em; }
+  .footer__redesSociales {
+    list-style: none;
+    display: inline;
+    padding-left: 2em; }
+  .footer__newsletter {
+    padding-left: 2.5em; }
+  .producto1 img, .producto2 img {
+    width: 19em; }
+  .producto1 h3, .producto2 h3 {
+    line-height: 1.75em; }
+  .main__nosotros p {
+    color: #000000;
+    font-family: "roboto", sans-serif;
+    font-size: 1rem;
+    text-align: justify;
+    line-height: 1.4rem; } }
+
+@media only screen and (min-width: 799px) and (max-width: 1018px) {
+  .header__navMenu li {
+    font-size: 2.3vh; }
+  .footer__horarios {
+    padding-left: 2em;
+    padding-right: 1.5em;
+    padding-bottom: 2em; }
+    .footer__horarios span, .footer__horarios li {
+      font-size: 0.91rem; }
+  .footer__menuSecundario {
+    list-style: none;
+    padding-bottom: 1.5em;
+    padding-left: 3em;
+    padding-right: 4em; }
+  .footer__redesSociales {
+    list-style: none;
+    display: inline;
+    padding-left: 2em; }
+  .footer__newsletter {
+    padding-left: 2.5em; }
+  .producto1 img, .producto2 img {
+    width: 19em; }
+  .producto1 h3, .producto2 h3 {
+    line-height: 1.75em; }
+  .main__nosotros p {
+    color: #000000;
+    font-family: "roboto", sans-serif;
+    font-size: 1rem;
+    text-align: justify;
+    line-height: 1.2rem; } }
+
+@media only screen and (min-width: 768px) and (max-width: 798px) {
+  .header__navMenu li {
+    font-size: 2.3vh; }
+  .footer__horarios {
+    padding-left: 2em;
+    padding-right: 1.5em;
+    padding-bottom: 2em; }
+    .footer__horarios span, .footer__horarios li {
+      font-size: 0.91rem; }
+  .footer__menuSecundario {
+    list-style: none;
+    padding-bottom: 1.5em;
+    padding-left: 3em;
+    padding-right: 4em; }
+  .footer__redesSociales {
+    list-style: none;
+    display: inline;
+    padding-left: 2em; }
+  .footer__newsletter {
+    padding-left: 2.5em; }
+  .producto1 img, .producto2 img {
+    width: 19em; }
+  .producto1 h3, .producto2 h3 {
+    line-height: 1.75em; }
+  .main__nosotros p {
+    color: #000000;
+    font-family: "roboto", sans-serif;
+    font-size: 0.9rem;
+    text-align: justify;
+    line-height: 1.2rem; } }
+
+@media only screen and (min-width: 680px) and (max-width: 767px) {
+  .header__navMenu li {
+    font-size: 1.9vh; }
+  .footer__horarios {
+    padding-left: 2em;
+    padding-right: 1.5em;
+    padding-bottom: 2em; }
+    .footer__horarios span, .footer__horarios li {
+      font-size: 0.91rem; }
+  .footer__menuSecundario {
+    list-style: none;
+    padding-bottom: 1.5em;
+    padding-left: 3em;
+    padding-right: 4em; }
+  .footer__redesSociales {
+    list-style: none;
+    display: inline;
+    padding-left: 2em; }
+  .footer__newsletter {
+    padding-left: 2.5em; }
+  .producto1 img, .producto2 img {
+    width: 19em; }
+  .producto1 h3, .producto2 h3 {
+    font-size: 1.7rem;
+    line-height: 1.2em;
+    letter-spacing: 1px; }
+  .producto1 p, .producto2 p {
+    font-size: 1rem;
+    line-height: 1.2rem; }
+  .producto1__text, .producto2__text {
+    padding-top: 1em; }
+  .enlaceVerMas {
+    font-size: 1rem;
+    line-height: 3em; }
+  .main__nosotros p {
+    color: #000000;
+    font-family: "roboto", sans-serif;
+    font-size: 0.95rem;
+    text-align: justify;
+    line-height: 1rem; }
+  .main__nosotrosContenido img {
+    width: 8.96em;
+    height: 8.96em; }
+  .main__contactoMapa iframe {
+    width: 240px; } }
+
+@media only screen and (min-width: 575px) and (max-width: 679px) {
+  .header__navMenu li {
+    font-size: 1.7vh;
+    overflow: hidden; }
+  .footer__horarios {
+    padding-left: 2em;
+    padding-right: 1.5em;
+    padding-bottom: 2em; }
+    .footer__horarios span, .footer__horarios li {
+      font-size: 0.8rem; }
+  .footer__menuSecundario {
+    list-style: none;
+    padding-bottom: 1.5em;
+    padding-left: 3em;
+    padding-right: 4em; }
+  .footer__redesSociales {
+    list-style: none;
+    display: inline;
+    padding-left: 2em; }
+  .footer__newsletter {
+    padding-left: 2.5em; }
+    .footer__newsletter form input {
+      width: 110px; }
+    .footer__newsletter form button {
+      width: 4em; }
+  .hero h1 {
+    font-size: 2.5rem; }
+  .producto1 img, .producto2 img {
+    width: 19em; }
+  .producto1 h3, .producto2 h3 {
+    font-size: 1.7rem;
+    line-height: 1.2em;
+    letter-spacing: 1px; }
+  .producto1 p, .producto2 p {
+    font-size: 0.9rem;
+    line-height: 1.2rem; }
+  .producto1__text, .producto2__text {
+    padding-top: 1em; }
+  .enlaceVerMas {
+    font-size: 1rem;
+    line-height: 2.2em; }
+  .main__nosotros p {
+    color: #000000;
+    font-family: "roboto", sans-serif;
+    font-size: 0.8rem;
+    text-align: justify;
+    line-height: 1rem; }
+  .main__nosotrosContenido img {
+    width: 8.96em;
+    height: 8.96em; }
+  .main__contactoMapa iframe {
+    width: 240px; } }
+
+@media only screen and (min-width: 500px) and (max-width: 574px) {
+  .header__navMenu li {
+    font-size: 1.7vh;
+    overflow: hidden; }
+  .footer__subcontenido img {
+    display: none; }
+  .footer__horarios {
+    padding-left: 2em;
+    padding-right: 1.5em;
+    padding-bottom: 2em; }
+    .footer__horarios span, .footer__horarios li {
+      font-size: 0.8rem; }
+  .footer__menuSecundario {
+    list-style: none;
+    padding-bottom: 1.5em;
+    padding-left: 3em;
+    padding-right: 4em; }
+  .footer__redesSociales {
+    list-style: none;
+    display: inline;
+    padding-left: 3em; }
+    .footer__redesSociales li img {
+      width: 19px; }
+  .footer__newsletter {
+    padding-left: 2em; }
+    .footer__newsletter form input {
+      width: 110px; }
+    .footer__newsletter form button {
+      width: 4em; }
+  .hero h1 {
+    font-size: 1.6rem; }
+  .producto1 img, .producto2 img {
+    width: 15em; }
+  .producto1 h3, .producto2 h3 {
+    font-size: 1.4rem;
+    line-height: 1.2em;
+    letter-spacing: 1px; }
+  .producto1 p, .producto2 p {
+    font-size: 0.8rem;
+    line-height: 1.2rem; }
+  .producto1__text, .producto2__text {
+    padding-top: 1em; }
+  .enlaceVerMas {
+    font-size: 1rem;
+    line-height: 2em; }
+  .main__nosotros p {
+    color: #000000;
+    font-family: "roboto", sans-serif;
+    font-size: 0.7rem;
+    text-align: justify;
+    line-height: 0.95rem; }
+  .main__nosotrosContenido img {
+    width: 7.98em;
+    height: 7.98em; }
+  .main__contactoMapa iframe {
+    width: 240px; }
+  .main__contactoFormulario {
+    width: 86%; } }
+
+@media only screen and (min-width: 450px) and (max-width: 499px) {
+  .header__buscador input {
+    width: 16em; }
+  .header__navMenu li {
+    overflow: hidden; }
+  .footer__subcontenido img {
+    display: none; }
+  .footer__horarios {
+    padding-left: 2em;
+    padding-right: 1.5em;
+    padding-bottom: 2em; }
+    .footer__horarios span, .footer__horarios li {
+      font-size: 0.8rem; }
+  .footer__menuSecundario {
+    list-style: none;
+    padding-bottom: 1.5em;
+    padding-left: 3em;
+    padding-right: 4em; }
+  .footer__redesSociales {
+    list-style: none;
+    display: inline;
+    padding-left: 3em; }
+    .footer__redesSociales li img {
+      width: 19px; }
+  .footer__newsletter {
+    padding-left: 1em; }
+    .footer__newsletter form input {
+      width: 100px; }
+    .footer__newsletter form button {
+      width: 4em; }
+  .hero h1 {
+    font-size: 1.6rem; }
+  .producto1 img, .producto2 img {
+    width: 15em; }
+  .producto1 h3, .producto2 h3 {
+    font-size: 1.4rem;
+    line-height: 1.2em;
+    letter-spacing: 1px; }
+  .producto1 p, .producto2 p {
+    font-size: 0.9rem;
+    line-height: 1rem; }
+  .producto1__text {
+    padding-top: 1em;
+    padding-left: 25px; }
+  .producto2__text {
+    padding-top: 1em;
+    padding-right: 25px; }
+  .enlaceVerMas {
+    font-size: 1rem;
+    line-height: 2em; }
+  .main__nosotros p {
+    color: #000000;
+    font-family: "roboto", sans-serif;
+    font-size: 0.64rem;
+    text-align: justify;
+    line-height: 1rem; }
+  .main__nosotrosContenido img {
+    width: 7em;
+    height: 7em; }
+  .main__contactoMapa iframe {
+    width: 200px; }
+  .main__contactoFormulario {
+    width: 91%; } }
+
+@media only screen and (min-width: 400px) and (max-width: 449px) {
+  .header__buscador input {
+    width: 14em; }
+  .header__navMenu {
+    font-size: 1rem; }
+    .header__navMenu li {
+      overflow: hidden; }
+  .footer__subcontenido img {
+    display: none; }
+  .footer__horarios {
+    padding-left: 0.7em;
+    padding-right: 1em;
+    padding-bottom: 2em; }
+    .footer__horarios span, .footer__horarios li {
+      font-size: 0.8rem; }
+  .footer__menuSecundario {
+    list-style: none;
+    padding-bottom: 1.5em;
+    padding-left: 2em;
+    padding-right: 2.5em; }
+  .footer__redesSociales {
+    list-style: none;
+    display: inline;
+    padding-left: 2em; }
+    .footer__redesSociales li img {
+      width: 19px; }
+  .footer__newsletter {
+    padding-left: 1em; }
+    .footer__newsletter form input {
+      width: 100px; }
+    .footer__newsletter form button {
+      width: 4em; }
+  .hero h1 {
+    font-size: 1.4rem; }
+  .producto1 img, .producto2 img {
+    width: 14em; }
+  .producto1 h3, .producto2 h3 {
+    font-size: 1.1rem;
+    line-height: 1.1em;
+    letter-spacing: 1px; }
+  .producto1 p, .producto2 p {
+    font-size: 0.9rem;
+    line-height: 1rem; }
+  .producto1__text {
+    padding-top: 1em;
+    padding-left: 25px; }
+  .producto2__text {
+    padding-top: 1em;
+    padding-right: 25px; }
+  .enlaceVerMas {
+    font-size: 1rem;
+    line-height: 2em; }
+  .main__nosotros p {
+    color: #000000;
+    font-family: "roboto", sans-serif;
+    font-size: 0.55rem;
+    text-align: justify;
+    line-height: 1rem; }
+  .main__nosotrosContenido img {
+    width: 7em;
+    height: 7em; }
+  .main__contactoSub h1 {
+    font-size: 1.7rem; }
+  .main__contactoSub h2 {
+    font-size: 1.5rem; }
+  .main__contactoInfo ul {
+    font-size: 1.2rem; }
+  .main__contactoMapa iframe {
+    width: 180px; }
+  .main__contactoFormulario {
+    font-size: 0.9rem;
+    width: 100%; }
+    .main__contactoFormulario textarea {
+      width: 90%; } }
+
+@media only screen and (min-width: 350px) and (max-width: 399px) {
+  .header__buscador input {
+    width: 11em; }
+  .header__navMenu {
+    font-size: 0.7rem;
+    word-spacing: 15px; }
+    .header__navMenu li {
+      overflow: hidden; }
+  .footer__subcontenido img {
+    display: none; }
+  .footer__horarios {
+    padding-left: 0.7em;
+    padding-right: 1em;
+    padding-bottom: 2em; }
+    .footer__horarios span, .footer__horarios li {
+      font-size: 0.8rem; }
+  .footer__menuSecundario {
+    list-style: none;
+    padding-bottom: 1.5em;
+    padding-left: 1.5em;
+    padding-right: 1.5em; }
+  .footer__redesSociales {
+    list-style: none;
+    display: inline;
+    padding-left: 1.5em; }
+    .footer__redesSociales li img {
+      width: 19px; }
+  .footer__newsletter {
+    padding-left: 1em; }
+    .footer__newsletter form input {
+      width: 100px; }
+    .footer__newsletter form button {
+      width: 4em; }
+  .footer__copyright {
+    font-size: 0.6rem; }
+  .hero h1 {
+    font-size: 1.1rem; }
+  .producto1 img, .producto2 img {
+    width: 12em; }
+  .producto1 h3, .producto2 h3 {
+    font-size: 1.1rem;
+    line-height: 1.1em;
+    letter-spacing: 1px; }
+  .producto1 p, .producto2 p {
+    font-size: 0.8rem;
+    line-height: 1rem; }
+  .producto1__text {
+    padding-top: 1em;
+    padding-left: 15px; }
+  .producto2__text {
+    padding-top: 1em;
+    padding-right: 15px; }
+  .enlaceVerMas {
+    font-size: 1rem;
+    line-height: 1.5em; }
+  .fotos__galeria {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: space-between; }
+    .fotos__galeria img {
+      width: 300px;
+      height: 300px; }
+  .main__nosotros p {
+    color: #000000;
+    font-family: "roboto", sans-serif;
+    font-size: 0.7rem;
+    text-align: justify;
+    line-height: 1.2rem; }
+  .main__nosotrosContenido {
+    grid-template-columns: 3fr;
+    grid-template-areas: "main__nosotrosText"; }
+    .main__nosotrosContenido img {
+      display: none; }
+  .main__contactoSub h1 {
+    font-size: 1.5rem; }
+  .main__contactoSub h2 {
+    font-size: 1.4rem; }
+  .main__contactoInfo ul {
+    font-size: 1.1rem; }
+  .main__contactoMapa iframe {
+    width: 150px; }
+  .main__contactoFormulario {
+    font-size: 0.9rem;
+    width: 100%; }
+    .main__contactoFormulario textarea {
+      width: 90%; } }
+
+@media only screen and (min-width: 300px) and (max-width: 349px) {
+  .header__buscador form {
+    display: none; }
+  .header__navMenu {
+    font-size: 0.7rem;
+    word-spacing: 10px; }
+    .header__navMenu li {
+      overflow: hidden; }
+  .footer__subcontenido img {
+    display: none; }
+  .footer__horarios {
+    padding-left: 0.7em;
+    padding-right: 0.7em;
+    padding-bottom: 2em; }
+    .footer__horarios span, .footer__horarios li {
+      font-size: 0.8rem; }
+  .footer__menuSecundario {
+    list-style: none;
+    padding-bottom: 1.5em;
+    padding-left: 0.7em;
+    padding-right: 1em;
+    font-size: 0.8rem; }
+  .footer__redesSociales {
+    list-style: none;
+    display: inline;
+    padding-left: 0.7em; }
+    .footer__redesSociales li img {
+      width: 16px; }
+  .footer__newsletter {
+    padding-left: 0.7em; }
+    .footer__newsletter p {
+      font-size: 0.9rem; }
+    .footer__newsletter form input {
+      width: 80px; }
+    .footer__newsletter form button {
+      width: 3em; }
+  .footer__copyright {
+    font-size: 0.6rem; }
+  .hero h1 {
+    font-size: 0.7rem; }
+  .producto1 img, .producto2 img {
+    width: 8em; }
+  .producto1 h3, .producto2 h3 {
+    font-size: 1rem;
+    line-height: 1.1em;
+    letter-spacing: 1px; }
+  .producto1 p, .producto2 p {
+    font-size: 0.9rem;
+    line-height: 1rem; }
+  .producto1__text {
+    padding-top: 1em;
+    padding-left: 15px; }
+  .producto2__text {
+    padding-top: 1em;
+    padding-right: 15px; }
+  .enlaceVerMas {
+    font-size: 1rem;
+    line-height: 1.5em; }
+  .main__productosContenido img {
+    width: 270px;
+    height: 200px; }
+  .main__productosContenido p {
+    width: 270px; }
+  .fotos__galeria {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: space-between; }
+    .fotos__galeria img {
+      width: 250px;
+      height: 250px; }
+  .main__nosotros p {
+    color: #000000;
+    font-family: "roboto", sans-serif;
+    font-size: 0.6rem;
+    text-align: justify;
+    line-height: 1.2rem; }
+  .main__nosotrosContenido {
+    grid-template-columns: 3fr;
+    grid-template-areas: "main__nosotrosText"; }
+    .main__nosotrosContenido img {
+      display: none; }
+  .main__contactoSub h1 {
+    font-size: 1rem;
+    line-height: 1.5rem; }
+  .main__contactoSub h2 {
+    font-size: 1rem;
+    line-height: 1.5rem; }
+  .main__contactoInfo ul {
+    font-size: 1rem;
+    line-height: 1.5rem; }
+  .main__contactoMapa iframe {
+    width: 150px;
+    height: 250px; }
+  .main__contactoFormulario {
+    font-size: 0.9rem;
+    width: 100%; }
+    .main__contactoFormulario textarea {
+      width: 90%; } }

@@ -1,0 +1,85 @@
+//estaciones del año: primavera = 1, verano = 2, otoño = 3, invierno = 4. Cambia el color de fondo del hero.//
+
+$estaciones: 1;
+
+.hero {
+    @if $estaciones == 1 {
+        background-color: #fdfd96;
+    } @else if $estaciones == 2 {
+        background-color: #fb9da7;
+    } @else if $estaciones == 3 {
+        background-color: #e2e9f5;
+    } @else if $estaciones == 4 {
+        background-color: #f4cfdf;
+    } @else {background-color: aqua;}
+    h1 {
+        font-family:"crete round", serif;
+        font-weight: bold;
+        font-size: 3.12rem;
+        list-style:none;
+        text-align: center;
+        text-transform: uppercase;
+        word-spacing:15px;
+        letter-spacing:10px;
+    }
+}
+
+.producto1 {
+    background-color: #f9eac3;
+}
+
+.producto2 {
+    background-color: #fdfd96;
+}
+
+.producto1, .producto2 {
+    height:300px;
+    padding-left: 1em;
+    padding-right: 1em;
+    img {
+        width:450px;
+        height:300px;
+        max-width:450px;
+        max-height: 300px;
+        padding-top: 1em;
+        padding-bottom: 1em;
+    }
+    h3 {
+        font-family:"roboto",sans-serif;
+        font-size: 1.87rem;
+        text-transform:capitalize;
+        letter-spacing:2px;
+        color:#005738;
+        width:50%;
+        max-width: auto;
+        line-height: 3em;
+    }
+    p {
+        font-family:"roboto",sans-serif;
+        font-weight:bold;
+        font-size: 1.12rem;
+        letter-spacing:2px;
+        color: #000000;
+        line-height: 1.6rem;
+        width: 100%;
+        max-width: auto;
+    }
+}
+
+.producto1__contenido {
+    display: flex;
+    flex-direction: row;
+}
+
+.producto2__contenido {
+    display: flex;
+    flex-direction: row-reverse;
+}
+
+.producto1__text {
+    padding-left: 50px;
+}
+
+.producto2__text {
+    padding-right: 50px;
+}

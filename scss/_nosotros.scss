@@ -1,0 +1,39 @@
+.main__nosotros {
+    background:linear-gradient(-50deg,#f5ce6d,#fdfd96);
+    height:350px;
+    padding-left: 1em;
+    padding-right: 1em;
+    h1 {
+        font-family:"roboto";
+        font-size: 1.87rem;
+        font-weight:bold;
+        text-transform: uppercase;
+        letter-spacing:2px;
+        padding-top: 0.4em;
+    }
+    p {
+        color: #000000;
+        font-family:"roboto", sans-serif;
+        font-size:1rem;
+        text-align:justify;
+        line-height: 1.9rem;
+    }
+}
+
+.main__nosotrosContenido {
+    display: inline-grid;
+    grid-template-columns: 1.7fr 1.3fr;
+    grid-template-areas: "main__nosotrosText main__nosotrosFoto";
+    img {
+        width: 14em;
+        height: 14em;
+    }
+}
+
+.main__nosotrosFoto {
+    grid-area: main__nosotrosFoto;
+    justify-self: center;
+    align-self:center;
+    transform: rotate(-10deg);
+    z-index: 0;
+}

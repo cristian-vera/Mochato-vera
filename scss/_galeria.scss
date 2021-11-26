@@ -1,0 +1,25 @@
+.main__galeria {
+    background:linear-gradient(-50deg,#f5ce6d,#fdfd96);
+    padding-left: 1em;
+    padding-right: 1em;
+    padding-top: 0.4em;
+    h1 {
+        font-family:"roboto";
+        font-size: 1.87rem;
+        font-weight:bold;
+        text-transform: uppercase;
+        letter-spacing:2px;
+        line-height: 3rem;
+    }
+}
+
+.fotos__galeria {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    img {
+        width: 375px;
+        height: 375px;
+    }
+}

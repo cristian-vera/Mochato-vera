@@ -1,0 +1,142 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Crete+Round:ital@1&family=Roboto:wght@500&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="./css/estilos.css">
+    <title>Contacto | Mochato</title>
+    <meta name="description" content="Para mas información, contactanos">
+    <meta name="keywords" content="mochato, cafeteria, reposteria, cafeteria caba, resposteria caba, contacto">
+</head>
+<body>
+    <header class="header">
+        <div class="header__contenido">
+            <div>
+                <a href="./index.html"><img src="images\logo-mochato-1.jpg" width="115" height="105"></a>
+            </div>
+            <div class="header__buscador">
+                <form action="/buscar" method="get">
+                    <input type="search" placeholder="Buscar">
+                    <button type="search">Buscar</button>
+                </form>
+                <nav class="header__nav">
+                    <ul class="header__navMenu">
+                        <li><a href="index.html">Inicio</a></li>
+                        <li><a href="productos.html">Productos</a>
+                            <ul class="header__navSubmenu">
+                                <li>
+                                    <a href="productos.html#bebidas">Bebidas</a>
+                                </li>
+                                <li>
+                                    <a href="productos.html#reposteria">Reposteria</a>
+                                </li>
+                            </ul>
+                        </li>
+                        <li><a href="galeria.html">Galeria</a></li>
+                        <li><a href="nosotros.html">Nosotros</a></li>
+                        <li><a href="contacto.html">Contacto</a></li>
+                    </ul>
+                </nav>
+            </div>
+        </div>        
+    </header>
+    <main class="main__contacto">
+            <div class="main__contactoSub">
+                <div class="main__contactoInfo">
+                    <div>
+                        <h1>ATENCIÓN TELEFONICA AL CLIENTE:</h1>
+                    </div>
+                    <h2>TELEFONO: 0800-888-1234</h2>
+                    <ul>
+                        <li>LUNES A VIERNES DE 7:30 A 19 HS</li>
+                        <li>SABADOS Y DOMINGOS DE 8:30 A 20 HS</li>       
+                    </ul>
+                </div>
+                <div class="main__contactoMapa">
+                    <h2>Visitanos:</h2>
+                    <iframe src="https://www.google.com/maps/embed?pb=!1m23!1m12!1m3!1d976.8735827951305!2d-58.450634532279736!3d-34.558670165281505!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!4m8!3e6!4m0!4m5!1s0x95bcb5cd5ed6b839%3A0x76e723d064a3f69f!2s11%20de%20Septiembre%20de%201888%202100%2C%20Buenos%20Aires!3m2!1d-34.558800399999996!2d-58.451366199999995!5e0!3m2!1ses-419!2sar!4v1634672010041!5m2!1ses-419!2sar" width="400" height="300" style="border:0;" allowfullscreen="" loading="lazy"></iframe>
+                </div>
+            </div>
+        <div class="main__contactoFormulario">
+            <form action="" method="post" enctype="text/plain">
+                <fieldset>
+                    <legend>Completa el formulario</legend>
+                    <div>
+                        <label for="nombre_apellido" class="hidden">Nombre y apellido</label>
+                        <input type="text" name="nombre_apellido" id=nombre_apellido placeholder="Nombre y apellido">
+                    </div>
+                    <div>
+                        <label for="email" class="hidden">Email</label>
+                        <input type="email" name="email" id="email" placeholder="Email">
+                    </div>
+                    <div>
+                        <label for="asunto" class="hidden">Asunto</label>
+                        <select name="asunto" id="asunto">
+                            <option value="asunto">Asunto</option>
+                            <option value="sugerencia">Sugerencia</option>
+                            <option value="consulta">Consulta</option>
+                            <option value="otros">Otros</option>
+                        </select>
+                    </div>
+                    <div>
+                        <label for="mensaje" class="hidden">Escriba su asunto</label>
+                        <textarea type="text" name="mensaje" id="mensaje" rows="10" cols="50" placeholder="Escriba su asunto"></textarea>
+                    </div>
+                    <div>
+                        <input type="checkbox" name="aceptarnewsletter" id="aceptarnewsletter" value="aceptarnewsletter">
+                        <label for="aceptarnewsletter">Acepto recibir información sobre las novedades y promociones de Mochato</label>
+                    </div>
+                    <button type="submit"><strong>Enviar</strong></button>
+                    <button type="reset"><strong>Borrar</strong></button>
+                </fieldset>
+            </form>    
+        </div>
+    </main>
+    <footer class="footer">
+        <div class="footer__contenido">
+            <div class="footer__subcontenido">
+                <div>
+                    <img src="images\logo-mochato-1.jpg" width="90px" height="79px">
+                </div>
+                <div class="footer__horarios"><span>HORARIOS:</span>
+                    <ul>
+                        <li>LUNES A VIERNES DE 7:30 A 19 HS</li>
+                        <li>SABADOS Y DOMINGOS DE 8:30 A 20 HS</li>       
+                    </ul>
+                </div>
+            </div>
+            <div>
+                <div>
+                    <ul class="footer__menuSecundario">
+                        <li><a href="contacto.html">Contacto</a></li>
+                        <li><a href="nosotros.html">Nosotros</a></li>
+                        <li><a href="faq.html">FAQ</a></li>
+                    </ul>
+                </div>    
+                <div>
+                    <ul class="footer__redesSociales">
+                        <li><a href="facebook"><img src="./images/Facebook_icon-icons.com_66805.png"></a></li>
+                        <li><a href="twitter"><img src="./images/1491579583-yumminkysocialmedia02_83111.png"></a></li>
+                        <li><a href="instagram"><img src="./images/iconfinder-social-media-applications-3instagram-4102579_113804.png"></a></li>
+                    </ul>
+                </div>
+            </div>
+            <div class="footer__newsletter">
+                <div>
+                    <p>Si queres conocer las ultimas novedades suscribete a nuestro newsletter:</p>
+                </div>
+                <form>
+                    <label for="email" class="hidden">Email</label>
+                    <input type="email" name="email" id="email" placeholder="Email">
+                    <button type="submit"><strong>Enviar</strong></button>
+                </form>
+            </div>
+        </div>
+        <div class="footer__copyright"><p>©Mochato 2021. Todos los derechos reservados.</p></div>
+    </footer>
+</body>
+</html>
